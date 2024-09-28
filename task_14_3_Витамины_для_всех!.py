@@ -20,8 +20,8 @@ kb = ReplyKeyboardMarkup(
 
 inline_menu_1 = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories')],
-        [InlineKeyboardButton(text='Формулы расчёта', callback_data='formulas')]
+        [InlineKeyboardButton(text='Рассчитать норму калорий', callback_data='calories'),
+        InlineKeyboardButton(text='Формулы расчёта', callback_data='formulas')]
     ]
 )
 
