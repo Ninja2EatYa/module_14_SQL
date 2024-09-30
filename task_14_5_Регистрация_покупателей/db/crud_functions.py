@@ -59,5 +59,7 @@ def is_included(username):
     try:
         if check_name.fetchone()[1] == username:
             return True
-    except Exception:
+    except TypeError:
         return False
+    finally:
+        conn.close()
